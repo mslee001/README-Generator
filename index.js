@@ -135,7 +135,7 @@ async function init() {
         const response = await userPrompts();
         badgeType(response);
         const readme = generateReadMe(response);
-        await writeFileAsync("README.md", readme);
+        await writeFileAsync("output/README.md", readme);
         console.log("README.md file Created!");
     } catch(err) {
         console.log(err);
